@@ -34,12 +34,8 @@ AI-generated daily insights, and a simulated bank connection with live updates.
 **Intelligence & automation**
 
 - 🤖 **AI Insights** — a personalized daily summary and a conversational Q&A over your own data (Google Gemini), with a deterministic **rule-based fallback** when no API key is configured
-- 🏦 **Bank connections (simulated)** — link a fictional bank account with OTP verification and watch transactions, balances, budgets, and insights update **in real time** via Server-Sent Events. Simulation only — never a real bank, credentials, or money
+- 🏦 **Bank connections (simulated)** — link a fictional bank account with OTP verification and watch transactions, balances, budgets, and insights update **in real time** via Server-Sent Events. Simulation only — never a real bank, credentials.
 - 🔔 **Budget alerts** — warnings the moment a synced expense pushes a budget past its threshold
-
-                  |
-
-## 🚀 Getting started
 
 ### Prerequisites
 
@@ -60,13 +56,7 @@ git clone https://github.com/your user name/AI-Powered-Expense-Tracker.git
 
 ##
 
-```bash
-
-```
-
-The suite runs on Node's built-in test runner and needs **no database**: auth rate
-limiting, transaction validation, budget alert logic, insights generation, Demo
-Bank account/OTP/sync logic, and route auth gating.
+.
 
 ## 🤝 Contributing
 
