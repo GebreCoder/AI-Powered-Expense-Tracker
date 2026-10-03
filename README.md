@@ -53,7 +53,7 @@ AI-generated daily insights, and a simulated bank connection with live updates.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your user namer/AI-Powered-Expense-Tracker.git
+git clone https://github.com/your user name/AI-Powered-Expense-Tracker.git
 
 
 ```
