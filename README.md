@@ -39,6 +39,8 @@ AI-generated daily insights, and a simulated bank connection with live updates.
 
                   |
 
+## 🚀 Getting started
+
 ### Prerequisites
 
 | Requirement | Version                  |
@@ -51,8 +53,20 @@ AI-generated daily insights, and a simulated bank connection with live updates.
 
 ```bash
 # 1. Clone the repository
- you can clone using the following!
 git clone https://github.com/<your-username>/expense-tracker.git
+
+               # app opens at http://localhost:5173
+```
+
+##
+
+```bash
+
+```
+
+The suite runs on Node's built-in test runner and needs **no database**: auth rate
+limiting, transaction validation, budget alert logic, insights generation, Demo
+Bank account/OTP/sync logic, and route auth gating.
 
 ## 🤝 Contributing
 
@@ -69,4 +83,3 @@ Contributions are welcome! If you'd like to improve SpendWise:
 **Built with Node.js, Express, PostgreSQL, and React** · Made with ❤️ and a lot of coffee
 
 </div>
-```
