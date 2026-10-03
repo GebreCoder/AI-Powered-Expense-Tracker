@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="400" height="450">
+  <defs>
+    <!-- Background gradients — warm dark gold tones -->
+    <linearGradient id="outerRing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a2a10"/>
+      <stop offset="100%" stop-color="#1e1808"/>
+    </linearGradient>
+    <linearGradient id="walletDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a2a10"/>
+      <stop offset="50%" stop-color="#2e200c"/>
+      <stop offset="100%" stop-color="#221808"/>
+    </linearGradient>
+    <linearGradient id="walletGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0c850"/>
+      <stop offset="50%" stop-color="#d4a017"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="ribbonGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3510"/>
+      <stop offset="100%" stop-color="#2e2008"/>
+    </linearGradient>
+    <linearGradient id="billGreen1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0d060"/>
+      <stop offset="100%" stop-color="#d4a830"/>
+    </linearGradient>
+    <linearGradient id="billGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5dc70"/>
+      <stop offset="100%" stop-color="#c89820"/>
+    </linearGradient>
+    <linearGradient id="billGreen2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c840"/>
+      <stop offset="100%" stop-color="#b89020"/>
+    </linearGradient>
+    <linearGradient id="billOrange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0a838"/>
+      <stop offset="100%" stop-color="#b08020"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient glow behind badge — warm gold -->
+  <circle cx="200" cy="195" r="190" fill="#d4a017" opacity="0.08" filter="url(#softGlow)"/>
+
+  <!-- Outer circle badge -->
+  <circle cx="200" cy="195" r="178" fill="url(#outerRing)"/>
+  <!-- Outer ring border -->
+  <circle cx="200" cy="195" r="178" fill="none" stroke="#6a5520" stroke-width="2.5"/>
+  <!-- Inner ring lines -->
+  <circle cx="200" cy="195" r="168" fill="none" stroke="#6a5520" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="200" cy="195" r="162" fill="none" stroke="#6a5520" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Circuit board decorative patterns — gold traces -->
+  <g opacity="0.1" stroke="#c8a030" stroke-width="1.2" fill="none" stroke-linecap="round">
+    <path d="M70 110 h25 v15 h15"/>
+    <path d="M65 130 h15 v-10 h10"/>
+    <circle cx="120" cy="120" r="2.5" fill="#c8a030"/>
+    <path d="M100 90 v20 h15"/>
+    <path d="M310 105 h20 v20 h-15"/>
+    <path d="M325 125 h15 v15"/>
+    <circle cx="330" cy="105" r="2.5" fill="#c8a030"/>
+    <path d="M290 95 v15 h15"/>
+    <path d="M75 270 h20 v-15 h15"/>
+    <path d="M80 290 h15 v10"/>
+    <circle cx="115" cy="270" r="2.5" fill="#c8a030"/>
+    <path d="M305 265 h20 v15 h-10"/>
+    <path d="M320 280 h10 v10"/>
+    <circle cx="325" cy="265" r="2.5" fill="#c8a030"/>
+    <path d="M55 190 h15 v10"/>
+    <path d="M335 185 h10 v15"/>
+    <circle cx="55" cy="190" r="2" fill="#c8a030"/>
+    <circle cx="345" cy="200" r="2" fill="#c8a030"/>
+  </g>
+
+  <!-- ============ MONEY BILLS ============ -->
+  <g filter="url(#dropShadow)">
+    <!-- Bill 1 - Gold, tilted left -->
+    <g transform="rotate(-18, 160, 95)">
+      <rect x="130" y="45" width="60" height="80" rx="4" fill="url(#billGreen1)"/>
+      <rect x="136" y="51" width="48" height="68" rx="2" fill="none" stroke="#fff" stroke-width="0.7" opacity="0.25"/>
+      <line x1="140" y1="60" x2="180" y2="60" stroke="#fff" stroke-width="0.5" opacity="0.2"/>
+      <line x1="140" y1="90" x2="180" y2="90" stroke="#fff" stroke-width="0.5" opacity="0.2"/>
+      <circle cx="160" cy="75" r="8" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.15"/>
+    </g>
+
+    <!-- Bill 2 - Bright gold -->
+    <g transform="rotate(-6, 200, 90)">
+      <rect x="165" y="38" width="60" height="80" rx="4" fill="url(#billGold)"/>
+      <rect x="171" y="44" width="48" height="68" rx="2" fill="none" stroke="#fff" stroke-width="0.7" opacity="0.25"/>
+      <line x1="175" y1="55" x2="215" y2="55" stroke="#fff" stroke-width="0.5" opacity="0.2"/>
+      <line x1="175" y1="85" x2="215" y2="85" stroke="#fff" stroke-width="0.5" opacity="0.2"/>
+      <text x="195" y="75" font-family="Georgia, serif" font-size="12" fill="#fff" text-anchor="middle" opacity="0.25">$</text>
+    </g>
+
+    <!-- Bill 3 - Amber gold -->
+    <g transform="rotate(6, 240, 88)">
+      <rect x="205" y="35" width="60" height="80" rx="4" fill="url(#billGreen2)"/>
+      <rect x="211" y="41" width="48" height="68" rx="2" fill="none" stroke="#fff" stroke-width="0.7" opacity="0.25"/>
+      <line x1="215" y1="52" x2="255" y2="52" stroke="#fff" stroke-width="0.5" opacity="0.2"/>
+      <line x1="215" y1="82" x2="255" y2="82" stroke="#fff" stroke-width="0.5" opacity="0.2"/>
+      <circle cx="235" cy="67" r="8" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.15"/>
+    </g>
+
+    <!-- Bill 4 - Dark gold -->
+    <g transform="rotate(18, 270, 95)">
+      <rect x="228" y="42" width="55" height="75" rx="4" fill="url(#billOrange)"/>
+      <rect x="233" y="47" width="45" height="65" rx="2" fill="none" stroke="#fff" stroke-width="0.7" opacity="0.2"/>
+      <line x1="237" y1="57" x2="269" y2="57" stroke="#fff" stroke-width="0.5" opacity="0.2"/>
+      <line x1="237" y1="82" x2="269" y2="82" stroke="#fff" stroke-width="0.5" opacity="0.2"/>
+    </g>
+  </g>
+
+  <!-- ============ WALLET ============ -->
+  <g filter="url(#dropShadow)">
+    <!-- Wallet - LEFT side (dark leather) -->
+    <rect x="105" y="112" width="100" height="115" rx="12" fill="url(#walletDark)" stroke="#5a4520" stroke-width="1.8"/>
+    <line x1="115" y1="125" x2="195" y2="125" stroke="#5a4520" stroke-width="0.5" opacity="0.3"/>
+    <line x1="115" y1="215" x2="195" y2="215" stroke="#5a4520" stroke-width="0.5" opacity="0.3"/>
+
+    <!-- Brain icon on left side — gold accent -->
+    <g transform="translate(138, 145)" fill="none" stroke="#f0c850" stroke-width="2" stroke-linecap="round" opacity="0.85">
+      <path d="M0-12 C-8-12-14-7-14 0 C-14 5-11 9-7 10 C-9 12-10 15-8 18 C-6 20-3 19-1 16"/>
+      <path d="M0-12 C8-12 14-7 14 0 C14 5 11 9 7 10 C9 12 10 15 8 18 C6 20 3 19 1 16"/>
+      <path d="M0-12 V16"/>
+      <path d="M-10-2 H10"/>
+      <path d="M-11 5 H11"/>
+      <path d="M-9 11 H9"/>
+    </g>
+
+    <!-- Chart/arrow on left side — gold -->
+    <g transform="translate(125, 185)" fill="none" stroke="#d4a017" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="16" width="5" height="10" rx="1" fill="#d4a017" opacity="0.4"/>
+      <rect x="11" y="10" width="5" height="16" rx="1" fill="#d4a017" opacity="0.5"/>
+      <rect x="20" y="4" width="5" height="22" rx="1" fill="#d4a017" opacity="0.6"/>
+      <polyline points="0,22 12,12 22,16 38,0"/>
+      <polygon points="38,0 30,2 33,8" fill="#d4a017"/>
+    </g>
+
+    <!-- Wallet - RIGHT side (golden) -->
+    <rect x="200" y="112" width="100" height="115" rx="12" fill="url(#walletGold)" stroke="#b8860b" stroke-width="1.8"/>
+    <line x1="210" y1="125" x2="290" y2="125" stroke="#b8860b" stroke-width="0.5" opacity="0.3"/>
+    <line x1="210" y1="215" x2="290" y2="215" stroke="#b8860b" stroke-width="0.5" opacity="0.3"/>
+
+    <!-- Dollar sign on right side -->
+    <text x="235" y="162" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle" dominant-baseline="middle" opacity="0.92">$</text>
+
+    <!-- Coins stack on right side -->
+    <g transform="translate(225, 180)">
+      <ellipse cx="0" cy="14" rx="12" ry="5" fill="#8a6a10" opacity="0.6"/>
+      <ellipse cx="0" cy="10" rx="12" ry="5" fill="#a07a18" opacity="0.7"/>
+      <ellipse cx="0" cy="6" rx="12" ry="5" fill="#b89020" opacity="0.8"/>
+      <ellipse cx="0" cy="2" rx="12" ry="5" fill="#d4a830"/>
+      <text x="0" y="2" font-family="Arial" font-size="7" font-weight="bold" fill="#6a5010" text-anchor="middle" dominant-baseline="middle" opacity="0.7">$</text>
+    </g>
+
+    <!-- Chart bars on right side -->
+    <g transform="translate(270, 175)" opacity="0.65">
+      <rect x="0" y="16" width="5" height="14" rx="1" fill="#fff" opacity="0.4"/>
+      <rect x="8" y="8" width="5" height="22" rx="1" fill="#fff" opacity="0.5"/>
+      <rect x="16" y="0" width="5" height="30" rx="1" fill="#fff" opacity="0.65"/>
+      <polyline points="2,14 10,6 18,0" fill="none" stroke="#fff" stroke-width="1" opacity="0.4"/>
+    </g>
+
+    <!-- Wallet clasp / center connector -->
+    <rect x="193" y="155" width="16" height="26" rx="5" fill="#2e2008" stroke="#5a4520" stroke-width="1.5"/>
+    <circle cx="201" cy="168" r="4.5" fill="#5a4520" stroke="#7a6530" stroke-width="1"/>
+    <circle cx="201" cy="168" r="2" fill="#f0c850" opacity="0.8"/>
+
+    <!-- Eye/vision icon bottom right — gold -->
+    <g transform="translate(275, 208)" fill="none" stroke="#f0c850" stroke-width="1.8" opacity="0.55">
+      <path d="M0 0 C5-7 11-7 16 0 C11 7 5 7 0 0Z"/>
+      <circle cx="8" cy="0" r="3" fill="#f0c850" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- ============ RIBBON BANNER ============ -->
+  <g filter="url(#dropShadow)">
+    <!-- Ribbon tails -->
+    <polygon points="42,348 82,336 82,392 42,380" fill="#1e1808"/>
+    <polygon points="358,348 318,336 318,392 358,380" fill="#1e1808"/>
+    <line x1="82" y1="336" x2="82" y2="392" stroke="#3a2a10" stroke-width="1" opacity="0.5"/>
+    <line x1="318" y1="336" x2="318" y2="392" stroke="#3a2a10" stroke-width="1" opacity="0.5"/>
+
+    <!-- Main ribbon body -->
+    <rect x="55" y="330" width="290" height="60" rx="7" fill="url(#ribbonGrad)" stroke="#6a5520" stroke-width="1.5"/>
+
+    <!-- Ribbon fold shadows -->
+    <polygon points="55,330 82,336 82,330" fill="#0e0a04" opacity="0.4"/>
+    <polygon points="345,330 318,336 318,330" fill="#0e0a04" opacity="0.4"/>
+
+    <!-- Ribbon top highlight -->
+    <line x1="70" y1="332" x2="330" y2="332" stroke="#f0c850" stroke-width="0.5" opacity="0.15"/>
+
+    <!-- Text: AI-POWERED -->
+    <text x="200" y="355" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#f0c850" text-anchor="middle" letter-spacing="4" opacity="0.92">AI-POWERED</text>
+    <!-- Text: EXPENSE TRACKER -->
+    <text x="200" y="378" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="3">EXPENSE TRACKER</text>
+  </g>
+
+  <!-- Subtle outer glow ring — warm gold -->
+  <circle cx="200" cy="195" r="182" fill="none" stroke="#d4a017" stroke-width="0.8" opacity="0.15" filter="url(#glow)"/>
+</svg>

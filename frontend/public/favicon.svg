@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="goldBg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f0c850"/>
+      <stop offset="50%" stop-color="#d4a017"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="walletBody" x1="14" y1="20" x2="50" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3a2a10"/>
+      <stop offset="100%" stop-color="#2a1e0a"/>
+    </linearGradient>
+    <filter id="innerShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Golden rounded square with gradient -->
+  <rect width="64" height="64" rx="14" fill="url(#goldBg)"/>
+  <!-- Subtle shine overlay -->
+  <rect width="64" height="64" rx="14" fill="url(#goldShine)"/>
+  <!-- Inner border highlight -->
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#fff" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Wallet body - dark leather look -->
+  <rect x="13" y="19" width="38" height="28" rx="5" fill="url(#walletBody)" filter="url(#innerShadow)"/>
+  
+  <!-- Wallet flap / top fold line -->
+  <path d="M13 27 C20 25, 44 25, 51 27" stroke="#5a4520" stroke-width="1.2" fill="none" opacity="0.6"/>
+  
+  <!-- Wallet stitching detail -->
+  <path d="M16 21 L48 21" stroke="#6a5530" stroke-width="0.6" stroke-dasharray="2 2" opacity="0.4"/>
+  <path d="M16 44 L48 44" stroke="#6a5530" stroke-width="0.6" stroke-dasharray="2 2" opacity="0.3"/>
+  
+  <!-- Wallet clasp strap -->
+  <rect x="39" y="28" width="12" height="12" rx="3" fill="#4a3a18" stroke="#6a5530" stroke-width="0.8"/>
+  
+  <!-- Wallet clasp button -->
+  <circle cx="45" cy="34" r="3" fill="#d4a017" stroke="#b8860b" stroke-width="0.6"/>
+  <circle cx="45" cy="34" r="1.5" fill="#f0c850" opacity="0.6"/>
+  
+  <!-- Dollar sign -->
+  <text x="27" y="38" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#d4a017" text-anchor="middle" dominant-baseline="middle" opacity="0.9">$</text>
+</svg>

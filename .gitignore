@@ -1,0 +1,13 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Each app manages its own ignores (node_modules, .env, dist) in its own
+# .gitignore — see backend/.gitignore and frontend/.gitignore.
