@@ -29,7 +29,7 @@ A production-style REST API for the Expense Tracker app — **Node.js + Express 
 - **Budgets** — per-category spending limits with live progress (daily / weekly / monthly / yearly)
 - **Dashboard** — balance summary, monthly income-vs-expense trend, spending-by-category breakdown
 - **AI Insights** — personalized daily summaries and a conversational Q&A over the user's data (Google Gemini, with a deterministic rule-based fallback)
-- **Demo Bank Connections** — a production-style *simulated* bank integration with 13-digit accounts, OTP verification, realtime sync, and a background simulator (see [docs/demo-bank.md](../docs/demo-bank.md))
+- **Demo Bank Connections** — a production-style *simulated* bank integration with 13-digit accounts, OTP verification, realtime sync, and a background simulator
 
 ## Tech stack
 
@@ -62,7 +62,6 @@ expense-tracker/
 │       └── services/
 │           ├── insightsService.js → AI Insights (retrieve → generate → cache)
 │           └── bank/             → Demo Bank simulation (provider, ledger, sync, simulator)
-├── docs/demo-bank.md           → full Demo Bank feature documentation
 └── frontend/                   → React + Vite app (see frontend/README.md)
 ```
 
@@ -789,7 +788,7 @@ See [AI Insights](#ai-insights) below for how the pipeline works and how to conf
 
 ### Demo Bank endpoints
 
-All routes require `Authorization: Bearer <token>` and only exist when `DEMO_BANK_ENABLED=true` (otherwise they return `404`). The connect flow is additionally rate-limited (20 req / 15 min). See [docs/demo-bank.md](../docs/demo-bank.md) for the full architecture and demo guide.
+All routes require `Authorization: Bearer <token>` and only exist when `DEMO_BANK_ENABLED=true` (otherwise they return `404`). The connect flow is additionally rate-limited (20 req / 15 min).
 
 #### Get config
 
@@ -1002,7 +1001,7 @@ AI_MODEL=gemini-3.5-flash
 
 ## Demo Bank connections
 
-Connect a fictional bank account (13-digit number + simulated OTP) and watch transactions, balances, budgets, and insights update in real time — powered by a simulated in-memory bank, never a real one. See **[docs/demo-bank.md](../docs/demo-bank.md)** for the full architecture, API reference, environment variables, and demo guide.
+Connect a fictional bank account (13-digit number + simulated OTP) and watch transactions, balances, budgets, and insights update in real time — powered by a simulated in-memory bank, never a real one.
 
 ---
 
